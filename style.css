@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Fonts */
+
+    --Montserrat:'Montserrat', sans-serif;
+    --BebasNeue:'Bebas Neue', cursive;
+    --Lobster:'Lobster', cursive;
+    --Acme:'Acme', sans-serif;
+    --Righteous:'Righteous', cursive;
+    --Sacramento:'Sacramento', cursive;
+    --PoiretOne:'Poiret One', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--PoiretOne);
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+@media (min-width:600px) {
+    body {
+        position: relative;
+    }
+    header {
+        height: 7vh;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+    }
+    header nav {
+        height: 7vh;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6rem 0 6rem;
+        position: relative;
+    }
+    header nav .logo h1 {
+        font-size: 3rem;
+        font-family: var(--Montserrat);
+        color: #f53b50;
+        letter-spacing: 30px;
+    }
+    header nav .logo h1:hover {
+        cursor: pointer;
+    }
+    header nav .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 690px;
+    }
+    header nav .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 150px;
+        height: 400px;
+        position: absolute;
+        top: 420%;
+        right: 2%;
+    }
+    header nav .menu ul li {
+        position: relative;
+    }
+    header nav .menu ul li:hover span {
+        opacity: 1;
+    }
+    header nav .menu ul li a {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header nav .menu ul li a:hover {
+        color: #f53b50;
+    }
+    header nav .menu ul li a svg {
+        position: absolute;
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+    }
+    header nav .menu ul li a span {
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    header nav .menu .register {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-family: var(--Montserrat);
+        text-align: center;
+        background-color: #f53b50;
+        width: 150px;
+        padding: 0.8rem;
+        border-radius: 20px;
+
+        position: absolute;
+        right: -2%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+        transition: 0.2s ease-in-out;
+    }
+    header nav .menu .register:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+
+    .firstSection {
+        height: 100vh;
+        background-image: url(images/6.jpg);
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
