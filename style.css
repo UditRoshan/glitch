@@ -63,7 +63,7 @@ ul li{
     header nav .logo h1 {
         font-size: 3rem;
         font-family: var(--Montserrat);
-        color: #f53b50;
+        color: #f77c84;
         letter-spacing: 30px;
     }
     header nav .logo h1:hover {
@@ -104,12 +104,24 @@ ul li{
         text-align: center;
     }
     header nav .menu ul li a:hover {
-        color: #f53b50;
+        color: white;
     }
     header nav .menu ul li a svg {
         position: absolute;
         z-index: 2;
         transition: all 0.4s ease-in-out;
+    }
+    header nav .menu ul li a .menuSvg1 {
+        fill: greenyellow;
+    }
+    header nav .menu ul li a .menuSvg2 {
+        fill: red;
+    }
+    header nav .menu ul li a .menuSvg3 {
+        fill: rgb(0, 110, 255);
+    }
+    header nav .menu ul li a .menuSvg4 {
+        fill: rgb(255, 0, 85);
     }
     header nav .menu ul li a span {
         width: 100px;
@@ -123,7 +135,7 @@ ul li{
         letter-spacing: 2px;
         font-family: var(--Montserrat);
         text-align: center;
-        background-color: #f53b50;
+        background-color: #f77c84;
         width: 150px;
         padding: 0.8rem;
         border-radius: 20px;
@@ -153,5 +165,10 @@ ul li{
         background-size: 100%;
         background-position: top;
         background-repeat: no-repeat;
+    }
+
+    .secondSection {
+        height: 100vh;
+        background: black;
     }
 }
